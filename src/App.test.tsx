@@ -2,8 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders default version", () => {
+test("renders default", () => {
   render(<App />);
-  const linkElement = screen.getByText(/tdd playground/i);
-  expect(linkElement).toBeInTheDocument();
+  const title = screen.getByText(/tdd playground/i);
+  expect(title).toBeInTheDocument();
 });

@@ -1,9 +1,10 @@
 import React from "react";
+import { Header } from "./Header/Header";
 
 function App() {
   return (
     <div>
-      <h1>{"TDD playground"}</h1>
+      <Header />
     </div>
   );
 }
