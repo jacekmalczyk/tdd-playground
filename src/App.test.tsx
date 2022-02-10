@@ -8,4 +8,6 @@ test("renders default", () => {
   expect(title).toBeInTheDocument();
   const label = screen.getByLabelText("Current");
   expect(label).toBeInTheDocument();
+  const counter = screen.getByRole("counter");
+  expect(counter).toHaveValue("0");
 });
